@@ -1,21 +1,14 @@
 #include "main.h"
 
 /**
- * main - print the alphabet in lowercase
+ * print_alphabet - print the alphabet in lowercase
  *
  * Return: Always 0.
  */
-void print_alphabet(void);
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
 
 void print_alphabet(void)
 {
-	int c;
+	char c;
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
