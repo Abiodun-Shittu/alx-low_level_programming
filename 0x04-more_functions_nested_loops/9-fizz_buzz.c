@@ -6,16 +6,15 @@
  * for multiples of 5 print Buzz
  * for multipes of 3 and 5 print FizzBuzz
  *
- * Return: returns 0
  */
 
 int main(void)
 {
 int i;
 
-for ( i = 1; i <= 100; i++)
+for (i = 1; i <= 100; i++)
 {
-if ((i % 3 == 0) && (i % 5 == 0))
+if (i % 5 == 0 && i % 3 == 0)
 {
 printf("%s", "FizzBuzz");
 }
@@ -37,4 +36,5 @@ printf(" ");
 }
 }
 printf("\n");
+return (0);
 }
