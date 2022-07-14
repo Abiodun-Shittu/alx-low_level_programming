@@ -2,8 +2,10 @@
 
 /**
  * _strcat - function that concatenates two strings.
+ * 
  * @dest: string to get attached
  * @str: string to append
+ * 
  * Rteurn: returns a pointer to the resulting string dest
  */
 
