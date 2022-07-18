@@ -8,20 +8,23 @@
  * substring is not found.
  */
 
-char *_strstr(char *haystack, char *needle)
+char  *_strstr(char *haystack, char *needle)
 {
-	while (*haystack)
-	{
-		char *change;
+	char *str1, *str2;
 
-		change = haystack;
-		while (*needle == *haystack)
+	while (*haystack != '\0')
+	{
+		str1 = haystack;
+		str2 = needle;
+
+		while (*haystack != '\0' && *str2 != '\0' && *haystack == *str2)
 		{
-			haystack++, needle++;
+			haystack++;
+			str2++;
 		}
-		if (*needle == '\0')
-			return (change);
-		haystack++;
+		if (*str2 == '\0')
+			return (str1);
+		haystack = str1 + 1;
 	}
 	return (0);
 }
