@@ -11,10 +11,11 @@
 
 int main(int argc, char **argv)
 {
-	int coins, i, ammount;
+	int coins, i, amount;
 	int value[5] = {25, 10, 5, 2, 1};
+
 	coins = 0;
-	ammount = atoi(argv[argc - 1]);
+	amount = atoi(argv[argc - 1]);
 
 	if (argc != 2)
 	{
@@ -29,11 +30,11 @@ int main(int argc, char **argv)
 	{
 		for (i = 0; i < 5; i++)
 		{
-			if (value[i] <= ammount)
+			if (value[i] <= amount)
 			{
-				coins += (ammount / value[i]);
-				ammount -= (ammount / value[i]) * value[i];
-				if (ammount == 0)
+				coins += (amount / value[i]);
+				amount -= (amount / value[i]) * value[i];
+				if (amount == 0)
 				{
 					printf("%d\n", coins);
 					break;
