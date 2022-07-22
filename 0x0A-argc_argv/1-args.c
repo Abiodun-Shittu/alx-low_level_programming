@@ -15,6 +15,6 @@ int main(int argc, char **argv)
 	{
 		(*argv)++;
 	}
-	printf("%d\n", num - 1);
+	printf("%i\n", num - 1);
 	return (0);
 }
