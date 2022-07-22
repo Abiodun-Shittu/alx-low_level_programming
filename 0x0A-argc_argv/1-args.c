@@ -11,8 +11,10 @@
 int main(int argc, char **argv)
 {
 	int num;
-	for (num = 0; num < argc; num++)
+
+	for (num = 0; num < argc;)
 	{
+		num++;
 		(*argv)++;
 	}
 	printf("%i\n", num - 1);
