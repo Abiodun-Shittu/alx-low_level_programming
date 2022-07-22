@@ -10,6 +10,11 @@
 
 int main(int argc, char **argv)
 {
-	printf("%d\n", argc);
+	int num;
+	for (num = 0; num < argc; num++)
+	{
+		(*argv)++;
+	}
+	printf("%d\n", num - 1);
 	return (0);
 }
