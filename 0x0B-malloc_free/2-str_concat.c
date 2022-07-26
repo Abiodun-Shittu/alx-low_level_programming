@@ -22,13 +22,12 @@ char *str_concat(char *s1, char *s2)
 	for (len2 = 0; s2[len2] != '\0'; len2++)
 
 	len = len1 + len2;
-	conStr = (char *)malloc(sizeof(char) * (len + 1));
+	conStr = malloc(sizeof(char) * (len + 1));
 	if (conStr == NULL)
 		return (NULL);
 	for (i = 0; i < len1; i++)
 		conStr[i] = s1[i];
-	for (j = 0; j < len2; j++, i++)
+	for (j = 0; j <= len2; j++, i++)
 		conStr[i] = s2[j];
-	conStr[len] = '\0';
 	return (conStr);
 }
