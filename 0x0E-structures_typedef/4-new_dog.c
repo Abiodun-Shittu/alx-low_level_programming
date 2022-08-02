@@ -31,7 +31,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	for (index = 0; index < nameLength; index++)
-		nameLength[index] = name[index];
+		newDog->name[index] = name[index];
 
 	newDog->age = age;
 
@@ -42,7 +42,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	for (index = 0; index < ownerLength; index++)
-		ownerLength[index] = owner[index];
+		newDog->owner[index] = owner[index];
 
 	return (newDog);
 }
