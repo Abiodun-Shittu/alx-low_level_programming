@@ -5,12 +5,10 @@
  *
  * @name: pointer to Name's string.
  * @f: pointer to function.
- *
- * Return: the string initialized.
  */
 
 void print_name(char *name, void (*f)(char *))
 {
 	if (name != NULL && f != NULL)
-		return (f(name));
+		f(name);
 }
