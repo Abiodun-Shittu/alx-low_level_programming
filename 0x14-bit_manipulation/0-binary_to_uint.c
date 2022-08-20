@@ -30,6 +30,6 @@ unsigned int binary_to_uint(const char *b)
 			uint += binary;
 		}
 	}
-
 	return (uint);
 }
+
