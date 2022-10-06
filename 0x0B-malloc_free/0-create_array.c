@@ -15,18 +15,24 @@ char *create_array(unsigned int size, char c)
 	char *arrMem;
 	unsigned int i;
 
-	if (size == 0)
+	if (size <= 0)
 	{
 		return (NULL);
 	}
-	arrMem = malloc(size * sizeof(char));
-	if (arrMem == NULL)
+	else
 	{
-		return (NULL);
+		arrMem = malloc(size * sizeof(char));
+		if (arrMem == NULL)
+		{
+			return (NULL);
+		}
+		else
+		{
+			for (i = 0; i < size; i++)
+			{
+				*(arrMem + i) = c;
+			}
+			return (arrMem);
+		}
 	}
-	for (i = 0; i < size; i++)
-	{
-		*(arrMem + i) = c;
-	}
-	return (arrMem);
 }
