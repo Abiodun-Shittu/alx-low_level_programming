@@ -11,3 +11,5 @@ This is a repository that contains everything there is to know about C programmi
 - ## 0x07-pointers_arrays_strings
 - ## 0x08-recursion
 - ## 0x09-static_libraries
+- ## 0x10-variadic_functions
+- ## 0x12-singly_linked_lists
