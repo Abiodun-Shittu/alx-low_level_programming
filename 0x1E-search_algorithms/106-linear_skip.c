@@ -16,8 +16,7 @@ skiplist_t *linear_skip(skiplist_t *list, int value)
 
 	go = list;
 
-	do
-	{
+	do {
 		list = go;
 		go = go->express;
 		printf("Value checked at index ");
