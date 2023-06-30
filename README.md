@@ -1,4 +1,4 @@
-# ALX Low Level Programming
+# ALX Low-Level Programming
 This is a repository that contains everything there is to know about C programming language which is a low level programming language
 
 - ## 0x00-hello_world
@@ -21,3 +21,6 @@ This is a repository that contains everything there is to know about C programmi
 - ## 0x1A-hash_tables
 - ## 0x1C-makefiles
 - ## 0x1E-search_algorithms
+
+## Author
+[Abiodun Shittu](https://github.com/Abiodun-Shittu/)
